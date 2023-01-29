@@ -24,8 +24,6 @@ const technoArray = [
 ]
 
 const contactArray = [
-    '<button class="secondary-button secondary-button-display-none" id="secondary-button01">Adresse</button>',
-    '<button class="secondary-button secondary-button-display-none" id="secondary-button02">Mail / Telephone</button>',
     '<button class="secondary-button secondary-button-display-none" id="secondary-button03">Reseaux</button>',
     '<button class="secondary-button secondary-button-display-none" id="secondary-button04">CV en ligne</button>',
 
@@ -119,16 +117,6 @@ const contentMap = {
         text: "GitHub",
         image: "/images/github.png",
         description: "GitHub est également un outil indispensable pour la collaboration sur des projets en équipe, avec des fonctionnalités telles que les pull requests et les branches, qui facilitent la gestion des contributions et des modifications de code. Je m'efforce de maintenir un code clair et documenté pour que mes projets soient faciles à comprendre et à utiliser pour d'autres développeurs."
-    },
-    "Adresse": {
-        text: "Adresse",
-        image: "/images/adress.png",
-        description: "<p>37B Avenue de Pujols</p><p>47300 Villeneuve-Sur-Lot</p>"
-    },
-    "Mail / Telephone": {
-        text: "Mail / Telephone",
-        image: "/images/mail.png",
-        description: "<p>Mail: randy.venant@gmail.com</p><p>Telephone: 06.87.99.77.25</p>"
     },
     "Reseaux": {
         text: "Reseaux",
