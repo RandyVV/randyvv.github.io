@@ -121,7 +121,8 @@ const contentMap = {
     "Reseaux": {
         text: "Reseaux",
         image: "/images/social.webp",
-        description: "Je suis présent sur les réseaux sociaux professionnels tels que LinkedIn et Twitter afin de partager mes connaissances et mon expérience dans le développement web avec la communauté. Je maintiens une présence active sur ces plateformes en partageant mes projets et en discutant avec d'autres développeurs. Cela me permet également de rester informé des dernières tendances et des nouvelles technologies."
+        description: "Je suis présent sur les réseaux sociaux professionnels tels que LinkedIn et Twitter afin de partager mes connaissances et mon expérience dans le développement web avec la communauté. Je maintiens une présence active sur ces plateformes en partageant mes projets et en discutant avec d'autres développeurs. Cela me permet également de rester informé des dernières tendances et des nouvelles technologies.",
+        link: '<a class="link-project" target="_blank" href="https://www.linkedin.com/in/randy-vv/">Me contacter sur LinkedIn</a>'
     },
     "CV en ligne": {
         text: "CV en ligne",
