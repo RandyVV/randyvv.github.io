@@ -127,7 +127,7 @@ const contentMap = {
     "CV en ligne": {
         text: "CV en ligne",
         image: "/images/cv.jfif",
-        description: '<a target="_blank" class="link-project" href=/images/RandyVENANT-VALERYCV.pdf>mon CV</a>'
+        description: '<a target="_blank" class="link-project" href=/images/RandyCV.pdf>mon CV</a>'
     },
 };
 const mainContent = document.getElementById('main-content')
