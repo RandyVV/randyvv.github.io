@@ -118,6 +118,11 @@ const contentMap = {
         image: "/images/github.png",
         description: "GitHub est également un outil indispensable pour la collaboration sur des projets en équipe, avec des fonctionnalités telles que les pull requests et les branches, qui facilitent la gestion des contributions et des modifications de code. Je m'efforce de maintenir un code clair et documenté pour que mes projets soient faciles à comprendre et à utiliser pour d'autres développeurs."
     },
+    "GitLab": {
+        text: "GitLab",
+        image: "/images/gitlab.png",
+        description: "Dans mon projet GameFriendZ, j'utilise GitLab, une plateforme de gestion de code source, de suivi des problèmes (issue tracking) et d'intégration continue. GitLab est un outil collaboratif de développement logiciel qui facilite la gestion des versions du code, la collaboration entre les développeurs et la gestion des tâches."
+    },
     "Reseaux": {
         text: "Reseaux",
         image: "/images/social.webp",
