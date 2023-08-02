@@ -88,15 +88,15 @@ const contentMap = {
         image: "/images/javascript.png",
         description: "Le Javascript est un outil merveilleux que j'applique avec methodologie depuis que j'ai découvert toutes les possibilités qu'il offre pour manipuler le DOM. Que ce soit pour les projets Front ou Back-End, JS me permet de gérer des projets complets avec une seule et même syntaxe, cela me permet de me concentrer sur les fonctionnalités de mon projet."
     },
-    "React": {
-        text: "React",
-        image: "/images/react.png",
-        description: "React est une librairie JavaScript qui m'a permis de découvrir de nouvelles possibilités de création tout en gardant une grande flexibilité pour maintenir les projets. Ayant une bonne maîtrise du Javascript, j'ai pu me concentrer sur l'apprentissage de React pour écrire des codes propres et facilement modifiables."
-    },
+    // "React": {
+    //     text: "React",
+    //     image: "/images/react.png",
+    //     description: "React est une librairie JavaScript qui m'a permis de découvrir de nouvelles possibilités de création tout en gardant une grande flexibilité pour maintenir les projets. Ayant une bonne maîtrise du Javascript, j'ai pu me concentrer sur l'apprentissage de React pour écrire des codes propres et facilement modifiables."
+    // },
     "Symfony": {
         text: "Symfony",
         image: "/images/symfo.png",
-        description: "Symfony est la technologie que j'ai suivi en spécialisation durant ma formation, il m'a permi de développer la partie Back-end de mon projet. "
+        description: "Symfony est la technologie que j'ai suivi en spécialisation durant ma formation, il m'a permi de développer la partie Back-end de mon projet. Aujourd'hui je l'utilise tous les jours sur mon projet GameFriendZ. "
     },
     "HTML": {
         text: "HTML",
