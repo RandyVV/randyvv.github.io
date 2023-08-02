@@ -53,7 +53,7 @@ const contentMap = {
     "GameFriendZ": {
         text: "GameFriendZ",
         image: "/images/gfz.png",
-        description: "GameFriendZ est un site de recherche de joueurs dans le domaine du jeu vidéo. C'est le site que j'ai réalisé durant ma formation et présenté le jour de mon passage au Titre Professionnel. Ayant suivi une spécialisation sur Symfony, je me suis occupé de la partie Back-End du projet. Aujourd'hui je continue d'améliorer le projet.",
+        description: "GameFriendZ est mon projet personnel que j'ai déclaré en tant qu'association. C'est un réseau social dédié aux gamers que j'ai réalisé en utilisant Symfony, Twig, JS, Bootstrap, Symfony UX et SCSS. L'objectif de ce projet est de fournir une plateforme interactive où les passionnés de jeux vidéo comme moi peuvent se connecter, partager leurs expériences de jeu, trouver de nouveaux amis et collaborer sur diverses activités liées aux jeux. J'ai choisi ces technologies pour créer une interface conviviale et réactive, facilitant ainsi l'interaction entre les utilisateurs. En tant qu'association, je mets l'accent sur la promotion d'un environnement amical et respectueux pour les joueurs de tous horizons. Mon objectif est de continuer à développer et améliorer GameFriendZ pour en faire une plateforme incontournable pour les gamers, favorisant l'échange de connaissances, l'entraide et l'essor de la passion pour les jeux vidéo.",
         link: '<a class="link-project" target="_blank" href="https://www.gamefriendz.com">Voir le site</a>'
     },
     "Mario-animation": {
