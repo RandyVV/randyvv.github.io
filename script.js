@@ -21,7 +21,7 @@ const technoArray = [
     '<button class="secondary-button secondary-button-display-none" id="secondary-button05">GitHub</button>',
     '<button class="secondary-button secondary-button-display-none" id="secondary-button06">Laravel</button>',
     '<button class="secondary-button secondary-button-display-none" id="secondary-button08">Symfony</button>',
-    '<button class="secondary-button secondary-button-display-none" id="secondary-button05">GitLub</button>',
+    '<button class="secondary-button secondary-button-display-none" id="secondary-button05">GitLab</button>',
 ]
 
 const contactArray = [
