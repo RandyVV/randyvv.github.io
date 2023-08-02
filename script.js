@@ -43,7 +43,7 @@ const contentMap = {
     "L'avenir": {
         text: "L'avenir",
         image: "/images/futur.png",
-        description: "Ayant suivi une formation certifiée par l'État (bac+2), je suis prêt à relever de nouveaux défis et à mettre mes compétences à disposition d'une entreprise inspirante et bienveillante où je pourrais continuer à apprendre et à grandir professionnellement. Je suis motivé à prouver mes capacités et à contribuer au succès de l'entreprise."
+        description: "Ayant suivi une formation certifiée par l'État DWWM(bac+2) que j'ai obtenu, je suis prêt à relever de nouveaux défis et à mettre mes compétences à disposition d'une entreprise inspirante et bienveillante où je pourrais continuer à apprendre et à grandir professionnellement. Je suis motivé à prouver mes capacités et à contribuer au succès de l'entreprise. Aujourd'hui je suis également Fondateur que GameFriendZ qui est un réseau social pour Gamers."
     },
     "Mes passions": {
         text: "Mes passions",
