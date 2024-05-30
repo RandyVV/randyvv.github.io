@@ -6,6 +6,7 @@ const presentationArray = [
 ]
 
 const projectArray = [
+    '<button class="secondary-button secondary-button-display-none" id="secondary-button01">Dossier-de-projet GameFriendZ</button>',
     '<button class="secondary-button secondary-button-display-none" id="secondary-button01">GameFriendZ</button>',
     '<button class="secondary-button secondary-button-display-none" id="secondary-button02">Mario-animation</button>',
     '<button class="secondary-button secondary-button-display-none" id="secondary-button03">To-do-list</button>',
@@ -34,12 +35,12 @@ const contentMap = {
     "Qui je suis": {
         text: "Qui je suis",
         image: "/images/maphoto.jpg",
-        description: "Je m'appelle Randy Venant-Valéry, je suis un développeur web passionné basé à Villeneuve-Sur-Lot, dans le Sud-Ouest de la France. L'été 2022 a été le début d'une nouvelle aventure pour moi, lorsque j'ai décidé de me reconvertir dans le développement web. Depuis, je me suis plongé avec enthousiasme dans l'apprentissage de nombreuses technologies, que je mets maintenant au service de projets passionnants."
+        description: "Je m'appelle Randy Venant-Valéry, je suis un développeur web passionné basé à Villeneuve-Sur-Lot, dans le Sud-Ouest de la France. Je suis développeur web depuis 2022, certifié développeur web et web mobile depuis début 2023. Actuellement, je travaille comme développeur web full stack pour une association où je crée un réseau social pour les joueurs de jeux vidéo. J'ai également développé un back office de gestion de tickets clients pour une agence. En parallèle, je travaille en freelance, réalisant diverses missions courtes pour des clients BtoB et BtoC."
     },
     "Le passé": {
         text: "Le passé",
         image: "/images/clock.png",
-        description: "Je suis passé par plusieurs secteurs d'activité, j'étais Chef de ligne en agroalimentaire puis je suis devenu vendeur en magasin."
+        description: "Avant de devenir développeur web, j'avais une carrière variée. J'étais chef dans l'industrie agroalimentaire, où j'ai acquis des compétences en gestion et en travail d'équipe. En parallèle, j'ai participé à de nombreuses compétitions de jeux vidéo en tant que joueur E-sport, ce qui m'a permis de développer des compétences en stratégie et en coordination. J'ai également travaillé comme vendeur dans un magasin spécialisé dans la culture geek, les jeux vidéo et les vêtements, où j'ai acquis une expérience en vente et en service à la clientèle."
     },
     "L'avenir": {
         text: "L'avenir",
@@ -57,6 +58,13 @@ const contentMap = {
         description: "GameFriendZ est mon projet personnel que j'ai déclaré en tant qu'association. C'est un réseau social dédié aux gamers que j'ai réalisé en utilisant Symfony, Twig, JS, Bootstrap, Symfony UX et SCSS. L'objectif de ce projet est de fournir une plateforme interactive où les passionnés de jeux vidéo comme moi peuvent se connecter, partager leurs expériences de jeu, trouver de nouveaux amis et collaborer sur diverses activités liées aux jeux. J'ai choisi ces technologies pour créer une interface conviviale et réactive, facilitant ainsi l'interaction entre les utilisateurs. En tant qu'association, je mets l'accent sur la promotion d'un environnement amical et respectueux pour les joueurs de tous horizons. Mon objectif est de continuer à développer et améliorer GameFriendZ pour en faire une plateforme incontournable pour les gamers, favorisant l'échange de connaissances, l'entraide et l'essor de la passion pour les jeux vidéo.",
         link: '<a class="link-project" target="_blank" href="https://www.gamefriendz.com">Voir le site</a>'
     },
+    "Dossier-de-projet GameFriendZ": {
+        text: "Dossier-de-projet GameFriendZ",
+        image: "/images/gfz.png",
+        description: "Pour en savoir plus sur GameFriendZ, vous pouvez consulter le dossier de projet que j'ai rédigé pour présenter mon concept, mes objectifs et ma vision pour le réseau social des gamers. Ce dossier détaille les fonctionnalités de la plateforme, les technologies utilisées, le public cible et les perspectives d'avenir du projet. Sur le lien ci-dessous, vous trouverez la toute première version du dossier de projet GameFriendZ. C'est le dossier que j'ai fait pour passer mon TP de fin de formation.",
+        link: '<a class="link-project" target="_blank" href="/images/dossier de projet.pdf">Voir le dossier</a>'
+    },
+
     "Mario-animation": {
         text: "Mario-animation",
         image: "/images/mario.png",
