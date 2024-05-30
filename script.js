@@ -34,7 +34,7 @@ const contactArray = [
 const contentMap = {
     "Qui je suis": {
         text: "Qui je suis",
-        image: "/images/maphoto.jpg",
+        image: "/images/maphoto.jpeg",
         description: "Je m'appelle Randy Venant-Valéry, je suis un développeur web passionné basé à Villeneuve-Sur-Lot, dans le Sud-Ouest de la France. Je suis développeur web depuis 2022, certifié développeur web et web mobile depuis début 2023. Actuellement, je travaille comme développeur web full stack pour une association où je crée un réseau social pour les joueurs de jeux vidéo. J'ai également développé un back office de gestion de tickets clients pour une agence. En parallèle, je travaille en freelance, réalisant diverses missions courtes pour des clients BtoB et BtoC."
     },
     "Le passé": {
