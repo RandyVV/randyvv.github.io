@@ -45,7 +45,7 @@ const contentMap = {
     "L'avenir": {
         text: "L'avenir",
         image: "/images/futur.png",
-        description: "Ayant suivi une formation certifiée par l'État DWWM(bac+2) que j'ai obtenu, je suis prêt à relever de nouveaux défis et à mettre mes compétences à disposition d'une entreprise inspirante et bienveillante où je pourrais continuer à apprendre et à grandir professionnellement. Je suis motivé à prouver mes capacités et à contribuer au succès de l'entreprise. Aujourd'hui je suis également Fondateur que GameFriendZ qui est un réseau social pour Gamers."
+        description: "Après deux ans d'expérience en tant que développeur PHP/Symfony, que ce soit au sein d'une association ou en tant que freelance, je suis prêt à relever de nouveaux défis professionnels. Passionné par le développement web, j'ai acquis une solide maîtrise de PHP et Symfony, développé des sites web et des solutions sur mesure, et géré des projets de manière autonome. Mon désir d'apprendre et de maîtriser de nouvelles technologies est inébranlable. Si vous cherchez un développeur motivé, rigoureux et prêt à se dépasser, n'hésitez pas à me contacter."
     },
     "Mes passions": {
         text: "Mes passions",
