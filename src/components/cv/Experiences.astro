@@ -1,0 +1,26 @@
+---
+import experiences from '../../data/experiences.js'
+---
+
+<section class="experience">
+    <h3>Expériences</h3>
+    {experiences.map(experience => 
+        <article>
+            <h4>{experience.role}</h4>
+            <p class="company">
+                {experience.link
+                    ? <a href={experience.link} target="_blank">{experience.company}</a>
+                    : experience.company
+                }
+            </p>
+            <p class="period">{experience.period}</p>
+            <ul class="description">
+                {experience.description.map(task => 
+                    <li>
+                        {task}
+                    </li>
+                )}
+            </ul>
+        </article>
+    )}
+</section>

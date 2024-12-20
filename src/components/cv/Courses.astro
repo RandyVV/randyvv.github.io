@@ -1,0 +1,15 @@
+---
+import courses from '../../data/courses.js'
+---
+
+<section class="education">
+    <h3>Formations</h3>
+    {courses.map(course =>
+        <article>
+            <h4>{course.degree}</h4>
+            <p class="school education-highlight">{course.school}</p>
+            <p class="period">{course.period}</p>
+            <p class="description">{course.description}</p>
+        </article>
+    )}
+</section>

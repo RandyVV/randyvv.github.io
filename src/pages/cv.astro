@@ -1,0 +1,24 @@
+---
+import data from '../data/misc.js';
+
+import Layout from '../layouts/Layout.astro';
+import CvHeader from '../components/cv/CvHeader.astro';
+import ThemeSwitcher from '../components/cv/ThemeSwitcher.astro';
+import Contact from '../components/cv/Contact.astro';
+import Skills from '../components/cv/Skills.astro';
+import Experiences from '../components/cv/Experiences.astro';
+import Courses from '../components/cv/Courses.astro';
+import Interests from '../components/cv/Interests.astro';
+
+Astro.locals.title = `${data.name} - ${data.title}`
+---
+
+<Layout>
+	<CvHeader/>
+    <ThemeSwitcher/>
+    <Contact/>
+    <Skills/>
+    <Experiences/>
+    <Courses/>
+    <Interests/>
+</Layout>

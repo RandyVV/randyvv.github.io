@@ -1,0 +1,20 @@
+export default [
+    'HTML',
+    'CSS',
+    'PHP',
+    'Symfony',
+    'Laravel',
+    'JavaScript',
+    'Node.js',
+    'MySQL',
+    'MongoDB',
+    'Docker',
+    'Git',
+    'Express.js',
+    'Restful API',
+    'React.js',
+    'Vue.js',
+    'Redis',
+    'JWT Authentication',
+    'Agile/Scrum'
+]

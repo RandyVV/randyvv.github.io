@@ -1,0 +1,55 @@
+<div class="theme-switcher">
+    <button class="theme-button">🌙 Mode Sombre</button>
+</div>
+
+<script>
+    const toggles = document.querySelectorAll('.theme-button')
+
+    const updateTheme = (newTheme, previousTheme) => {
+        if (previousTheme) {
+            document.body.classList.remove(previousTheme)
+        }
+        if (newTheme) {
+            document.body.classList.add(newTheme)
+        }
+
+        currentTheme = newTheme
+        localStorage.setItem('theme', newTheme)
+
+        if (currentTheme) {
+            updateToggles('☀️ Mode Clair')
+        }
+        else {
+            updateToggles('🌙 Mode Sombre')
+        }
+    }
+
+    const updateToggles = (label) => {
+        toggles.forEach(toggle => {
+            toggle.textContent = label
+        })
+    }
+
+    let currentTheme = localStorage.getItem('theme') || ''
+
+    if (currentTheme) {
+        updateTheme(currentTheme, '')
+    }
+
+    toggles.forEach(toggle => {
+        toggle.addEventListener('click', () => {
+            if (currentTheme) {
+                updateTheme('', currentTheme)
+            }
+            else {
+                updateTheme('dark-mode', currentTheme)
+            }
+        })
+    })
+
+    // const savedTheme = localStorage.getItem("theme");
+    // if (savedTheme) {
+    //     body.classList.add(savedTheme);
+    //     themeToggle.textContent = savedTheme === "dark-mode" ? "☀️ Mode Clair" : "🌙 Mode Sombre";
+    // }
+</script>

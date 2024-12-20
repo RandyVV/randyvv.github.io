@@ -1,0 +1,459 @@
+/* Global styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('/images/couleurs.webp') no-repeat center center fixed; /* Image de fond */
+    background-size: cover; /* Adapte l'image à l'écran */
+    color: #333;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+}
+/* Mode clair */
+body article {
+    background: #ffffff; /* Fond clair pour l'article en mode clair */
+    border-left: 6px solid #6a11cb; /* Bordure bleu-violet */
+    border-radius: 10px;
+    padding: 20px 25px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Ombre légère */
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+/* Effet de survol dans le mode clair */
+body article:hover {
+    transform: scale(1.05); /* Agrandissement léger de l'article */
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3); /* Ombre plus marquée */
+    background-color: #f7f7f7; /* Fond plus clair au survol */
+}
+
+/* Changement de couleur de la bordure au survol (mode clair) */
+body article:hover {
+    border-left: 6px solid #ff6ec7; /* Bordure rose vif au survol */
+}
+
+/* Changement de couleur du titre et du texte dans le mode clair */
+body article:hover h4 {
+    color: #ff6ec7; /* Titre devient rose clair au survol */
+}
+
+body article:hover .company {
+    color: #6c757d; /* Société devient gris foncé au survol */
+}
+
+body article:hover a {
+    color: #ff6ec7; /* Liens deviennent roses clairs */
+}
+
+/* Mode sombre */
+body.dark-mode {
+    background: url('/images/couleurs.webp') no-repeat center center fixed; /* Image de fond pour le mode sombre */
+    background-size: cover;
+    color: #e0e0e0;
+}
+
+body.dark-mode .container {
+    background: linear-gradient(45deg, #2c3e50, #4a4a4a);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+body.dark-mode .header {
+    background: linear-gradient(45deg, #000000, #434343, #2c2c2c); /* Dégradé de noir et gris foncé */
+    color: white;
+}
+
+body.dark-mode h3 {
+    color: #ff6ec7;
+}
+
+body.dark-mode a {
+    color: #ff6ec7;
+}
+
+body.dark-mode a:hover {
+    color: #ff9ef3;
+}
+
+body.dark-mode .skill-list li {
+    background: linear-gradient(45deg, #444, #666);
+    color: #e0e0e0;
+}
+
+body.dark-mode .theme-button {
+    background-color: #444;
+    color: #fff;
+}
+
+body.dark-mode .theme-button:hover {
+    background-color: #666;
+}
+
+/* Contact styles */
+body.dark-mode .contact-info div {
+    color: #f5f5f5; /* Texte clair en mode sombre pour les autres informations */
+}
+
+body.dark-mode .contact-info i {
+    color: #ff6ec7; /* Icônes en rose */
+}
+
+/* Changer la couleur de la ville et du numéro de téléphone en rose */
+body.dark-mode .contact-info div:nth-child(4), /* Numéro de téléphone */
+body.dark-mode .contact-info div:nth-child(5) { /* Ville */
+    color: #ff6ec7; /* Texte en rose pour la ville et le téléphone */
+    font-size: 1.2em; /* Taille de police augmentée pour une meilleure lisibilité */
+}
+
+/* Changer la couleur des sports et hobbies */
+body.dark-mode .interests h4 {
+    color: #ff6ec7; /* Changer le titre "Sports" et "Hobbies" en rose */
+}
+
+body.dark-mode .interests ul li {
+    color: #ff6ec7; /* Changer les éléments de la liste (Sports et Hobbies) en rose */
+}
+
+/* Mode sombre - Expérience */
+body.dark-mode article {
+    background: #333333; /* Fond sombre pour l'article en mode sombre */
+    border-left: 6px solid #ff6ec7; /* Bordure rose pour un contraste vif */
+    border-radius: 10px;
+    padding: 20px 25px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Ombre plus marquée pour l'article */
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+/* Effet de survol */
+body.dark-mode article:hover {
+    transform: scale(1.05); /* Agrandissement de l'article légèrement */
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5); /* Ombre plus marquée */
+    background-color: #444444; /* Fond un peu plus clair pour un effet de survol */
+}
+
+/* Changement de couleur de bordure au survol */
+body.dark-mode article:hover {
+    border-left: 6px solid #ff9ef3; /* Bordure plus claire et plus vive au survol */
+}
+
+/* Changement de couleur du texte et des liens lors du survol */
+body.dark-mode article:hover h4 {
+    color: #ff9ef3; /* Changer la couleur du titre en rose clair */
+}
+
+body.dark-mode article:hover .company {
+    color: #e0e0e0; /* Changer la couleur de la société en gris clair */
+}
+
+body.dark-mode article:hover a {
+    color: #ff9ef3; /* Liens deviennent plus clairs en rose au survol */
+}
+
+body.dark-mode article h4 {
+    font-size: 1.5em;
+    color: #ff6ec7; /* Titre en rose dans le mode sombre */
+    margin: 0 0 5px;
+}
+
+body.dark-mode article .company {
+    font-size: 1.1em;
+    color: #b3b3b3; /* Gris clair pour la société en mode sombre */
+    margin: 0;
+    font-style: italic;
+}
+
+body.dark-mode article .period {
+    font-size: 1em;
+    color: #bbb; /* Texte gris pour la période */
+    margin: 5px 0;
+}
+
+body.dark-mode article .description {
+    font-size: 1em;
+    color: #e0e0e0; /* Texte clair pour la description */
+    line-height: 1.8; /* Meilleure lisibilité du texte */
+}
+
+/* Changer la couleur des liens dans les articles en mode sombre */
+body.dark-mode article a {
+    color: #ff6ec7; /* Liens en rose dans le mode sombre */
+    text-decoration: none;
+}
+
+body.dark-mode article a:hover {
+    color: #ff9ef3; /* Liens plus clairs au survol */
+    text-decoration: underline;
+}
+
+
+/* Container styles */
+.container {
+    max-width: 850px;
+    margin: 30px auto;
+    padding: 25px;
+    /* background: url('/images/couleurs.webp'); */
+    background: linear-gradient(45deg, #f5f5f5, #e8e8e8);
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.8s ease-out;
+}
+
+/* Header styles */
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(45deg, #6a11cb, #ff6ec7, #2575fc);
+    color: white;
+    border-radius: 12px;
+    padding: 30px 20px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Bouton pour changer le thème */
+.theme-switcher {
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+.theme-button {
+    background-color: #6a11cb;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.theme-button:hover {
+    background-color: #2575fc;
+    transform: scale(1.1);
+}
+
+/* Profile Picture */
+.profile-pic {
+    width: 130px; /* Augmentation pour un meilleur impact visuel */
+    height: 130px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    border: 4px solid white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Profile Info */
+.profile-info h1 {
+    font-size: 2.6em; /* Plus grand pour accentuer le titre */
+    margin: 0;
+    color: white;
+}
+
+.profile-info h2 {
+    font-size: 1.4em;
+    margin: 8px 0 0;
+    color: #f0e6ff;
+    font-weight: 300;
+}
+
+/* Section styles */
+section {
+    margin-bottom: 40px; /* Espacement accru entre les sections */
+    padding: 0 10px;
+}
+
+h3 {
+    font-size: 1.9em; /* Légèrement agrandi */
+    color: #6a11cb;
+    margin-bottom: 15px;
+    position: relative;
+    padding-bottom: 5px;
+}
+
+h3::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(90deg, #6a11cb, #2575fc);
+    margin-top: 5px;
+    border-radius: 5px;
+}
+
+/* Contact styles */
+.contact-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Ajuste mieux la taille minimale */
+    gap: 20px; /* Espacement amélioré */
+    text-align: center;
+}
+
+.contact-nickname {
+    display: none;
+}
+
+.contact-info div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1em;
+    color: #495057; /* Couleur plus neutre */
+}
+
+.contact-info i {
+    margin-right: 8px;
+    color: #6a11cb;
+    font-size: 1.4em;
+}
+
+/* Skills styles */
+.skill-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    list-style: none;
+}
+
+.skill-list li {
+    background: linear-gradient(45deg, #ff6ec7, #6a11cb);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 1em;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-list li:hover {
+    transform: scale(1.15);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Centres d'intérêt (Sports et Hobbies côte à côte) */
+.interests {
+    margin-bottom: 30px;
+}
+
+.interests h3 {
+    font-size: 1.8em;
+    color: #6a11cb;
+    margin-bottom: 15px;
+}
+
+.interests h4 {
+    font-size: 1.4em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.interests ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.interests ul li {
+    font-size: 1.1em;
+    color: #495057;
+}
+
+/* Flexbox pour afficher Sports et Hobbies côte à côte */
+.interests .content {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px; /* Espace entre les deux colonnes */
+}
+
+.interests .content > div {
+    width: 45%; /* Chaque section prend environ 45% de la largeur */
+}
+
+.education-highlight {
+    font-style: italic;
+    font-size: 1.1em;
+    color: #9f86c0; /* Couleur similaire à MobilDev */
+}
+
+/* Experience styles */
+article {
+    background: #ffffff;
+    border-left: 6px solid #6a11cb;
+    border-radius: 10px;
+    padding: 20px 25px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+article h4 {
+    font-size: 1.5em;
+    color: #6a11cb;
+    margin: 0 0 5px;
+}
+
+article .company {
+    font-size: 1.1em; /* Augmenté légèrement */
+    color: #9f86c0;
+    margin: 0;
+    font-style: italic;
+}
+
+article .period {
+    font-size: 1em;
+    color: #6c757d;
+    margin: 5px 0;
+}
+
+article .description {
+    font-size: 1em;
+    color: #495057;
+    line-height: 1.8; /* Meilleure lisibilité */
+}
+
+/* Links */
+a {
+    color: #2575fc;
+    text-decoration: none;
+    font-weight: bold; /* Meilleure distinction des liens */
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #6a11cb;
+    text-decoration: underline;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    .contact-info {
+        grid-template-columns: 1fr;
+    }
+
+    h3 {
+        font-size: 1.6em; /* Réduction pour petits écrans */
+    }
+
+    .skill-list li {
+        font-size: 0.9em;
+        padding: 8px 15px;
+    }
+}

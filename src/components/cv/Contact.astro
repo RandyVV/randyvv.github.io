@@ -1,0 +1,43 @@
+---
+import contact from '../../data/contact.js';
+import data from '../../data/misc.js';
+---
+
+<section class="contact">
+    <h3>Contact</h3>
+    <div class="contact-info">
+        <div>
+            <i class="fas fa-envelope"></i>
+            <a href={`mailto:${contact.email}`}>
+                {contact.email}
+            </a>
+        </div>
+        <div>
+            <i class="fab fa-linkedin"></i>
+            <a href={contact.linkedin} target="_blank">
+                <span class="contact-platform">LinkedIn</span>
+                <span class="contact-nickname">randy-VV</span>
+            </a>
+        </div>
+        <div>
+            <i class="fab fa-github"></i>
+            <a href={contact.github} target="_blank">
+                <span class="contact-platform">GitHub</span>
+                <span class="contact-nickname">RandyVV</span>
+            </a>
+        </div>
+        <div>
+            <i class="fas fa-phone"></i>
+            <a href={`tel:${contact.phone}`}>
+                {contact.phone}
+            </a>
+        </div>
+        <div>
+            <i class="fas fa-map-marker-alt"></i>
+            <a
+                href={`https://www.google.com/maps?q=${encodeURIComponent(data.city)}`}
+                target="_blank">{data.city}</a
+            >
+        </div>
+    </div>
+</section>

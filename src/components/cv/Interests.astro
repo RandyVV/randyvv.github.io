@@ -1,0 +1,33 @@
+---
+import interests from "../../data/interests.js"
+---
+
+<section class="interests">
+    <h3>Centres d'intérêt</h3>
+
+    <div class="content">
+        <!-- Sports -->
+        <div>
+            <h4>Sports :</h4>
+            <ul>
+                {interests.sports.map(sport =>
+                    <li>
+                        {sport}
+                    </li>
+                )}
+            </ul>
+        </div>
+
+        <!-- Hobbies -->
+        <div>
+            <h4>Hobbies :</h4>
+            <ul>
+                {interests.hobbies.map(hobby =>
+                    <li>
+                        {hobby}
+                    </li>
+                )}
+            </ul>
+        </div>
+    </div>
+</section>

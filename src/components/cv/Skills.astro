@@ -1,0 +1,14 @@
+---
+import skills from '../../data/skills.js'
+---
+
+<section class="skills">
+    <h3>Compétences</h3>
+    <ul class="skill-list">
+        {skills.map(skill =>
+            <li>
+                {skill}
+            </li>
+        )}
+    </ul>
+</section>

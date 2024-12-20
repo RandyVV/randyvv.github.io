@@ -1,0 +1,73 @@
+@media print {
+    @page {
+        margin: 1cm;
+    }
+    
+    /* body {
+        background: none;
+    } */
+    
+    .container {
+        margin: 0 auto;
+        padding: 1rem;
+    }
+    
+    .profile {
+        display: flex;
+    
+        .profile-info {
+            text-align: start;
+            margin-inline-start: 2rem;
+        }
+    }
+    
+    .theme-switcher {
+        display: none;
+    }
+    
+    .contact-platform {
+        display: none;
+    }
+    .contact-nickname {
+        display: inline;
+    }
+    
+    .skill-list {
+        padding-inline-start: 0;
+        gap: 0.5rem;
+    
+        li {
+            padding: 5px 10px;
+        }
+    }
+    
+    body article {
+        padding: 0.8rem 1rem;
+        margin-block-end: 1rem;
+    }
+    
+    .header {
+        margin-block-end: 0;
+        padding: 1.2rem 0.8rem;
+    }
+    
+    h3 {
+        margin-block-start: 1rem;
+    }
+    
+    .interests {
+        margin-block-end: 0;
+    
+        h4 {
+            margin-block-start: 0;
+        }
+    
+        ul {
+            margin-block-start: 0.5rem;
+        }
+    }
+    
+    section {
+        margin-block-end: 1.6rem;
+    }
+}
