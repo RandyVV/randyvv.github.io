@@ -1,5 +1,6 @@
 declare namespace App {
     interface Locals {
-        title: string
+        title: string,
+        description: string
     }
 }
