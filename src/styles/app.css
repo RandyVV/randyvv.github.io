@@ -1,6 +1,5 @@
 /* Global styles */
 body {
-    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
     background: url('/images/couleurs.webp') no-repeat center center fixed; /* Image de fond */
@@ -184,21 +183,6 @@ body.dark-mode article a {
 body.dark-mode article a:hover {
     color: #ff9ef3; /* Liens plus clairs au survol */
     text-decoration: underline;
-}
-
-
-/* Container styles */
-.container {
-    max-width: 850px;
-    margin: 30px auto;
-    padding: 25px;
-    /* background: url('/images/couleurs.webp'); */
-    background: linear-gradient(45deg, #f5f5f5, #e8e8e8);
-    background-size: cover;
-    background-position: center;
-    border-radius: 12px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-    animation: fadeIn 0.8s ease-out;
 }
 
 /* Header styles */

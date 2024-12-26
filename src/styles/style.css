@@ -4,12 +4,10 @@
   --secondary-color: #7a8b99;
   --accent-color: #4b5b6b;
   --text-color: #fff;
-  --font-family: 'Roboto', sans-serif;
 }
 
 /* Global Styles */
 body {
-  font-family: var(--font-family);
   background: linear-gradient(135deg, #6c7c91, #8a9fae);
   color: var(--text-color);
   margin: 0;
