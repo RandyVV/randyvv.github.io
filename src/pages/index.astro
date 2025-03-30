@@ -1,168 +1,320 @@
 ---
-import '../styles/style.css';
-import Layout from '../layouts/Layout.astro';
+import "../styles/style.css";
+import Layout from "../layouts/Layout.astro";
 
 // Définir le titre dynamique de cette page
-Astro.locals.title = "Bienvenue sur le portfolio de Randy Venant - Développeur Web";
+Astro.locals.title =
+  "Bienvenue sur le portfolio de Randy Venant - Développeur Web";
 
-Astro.locals.description = "Randy Venant Valéry, Développeur Web spécialisé dans la création de sites vitrine, e-commerce et développement de bots Discord.";
+Astro.locals.description =
+  "Randy Venant Valéry, Développeur Web spécialisé dans la création de sites vitrine, e-commerce et développement de bots Discord.";
 ---
 
 <Layout>
   <!-- Header -->
-  <header>
-    <div class="header-content">
-      <img src="/images/moi.jpeg" alt="Randy Venant Valéry, Développeur Web, portrait professionnel" class="header-photo" />
+  <header class="hero-section">
+    <div class="container header-content">
+      <img
+        src="/images/moi.jpeg"
+        alt="Randy Venant Valéry, Développeur Web, portrait professionnel"
+        class="header-photo"
+      />
       <div class="header-text">
         <h1>
-          Randy Venant Valéry <br />
-          - Développeur Web
+          Randy Venant Valéry <span class="title-separator"
+            >- Développeur Web</span
+          >
         </h1>
-        <p>Spécialisé dans la création de sites vitrine, e-commerce et le développement de bots Discord sur-mesure. Passionné par l'innovation et la technologie, je transforme vos idées en solutions digitales concrètes.</p>
-        <p>Auto-entrepreneur expérimenté, je propose des services personnalisés pour répondre à vos besoins spécifiques en matière de développement web.</p>
-        <button class="cta-button" onclick="document.querySelector('#contact').scrollIntoView({ behavior: 'smooth' });" aria-label="Accéder à la section contact">
+        <p class="lead">
+          Spécialisé dans la création de sites vitrine, e-commerce et le
+          développement de bots Discord sur-mesure. Passionné par l'innovation
+          et la technologie, je transforme vos idées en solutions digitales
+          concrètes.
+        </p>
+        <p>
+          Auto-entrepreneur expérimenté, je propose des services personnalisés
+          pour répondre à vos besoins spécifiques en matière de développement
+          web.
+        </p>
+        <a
+          href="#contact"
+          class="cta-button"
+          aria-label="Accéder à la section contact"
+        >
           Me contacter
-        </button>
+        </a>
       </div>
     </div>
   </header>
 
-  <!-- Qui suis-je ? -->
-  <section>
-    <h2>Qui suis-je ?</h2>
-    <p>
-      Depuis toujours, les nouvelles technologies m’ont fasciné. Ce monde en constante évolution, où tout est possible, a éveillé en moi une curiosité insatiable. Un jour, l'envie de réorienter ma carrière est devenue plus forte que tout. J’ai alors décidé de me lancer dans une reconversion professionnelle pour devenir développeur web et mobile.
-    </p>
-    <p>
-      Plongé dans cet univers, chaque ligne de code m’a permis de découvrir une nouvelle facette de ma passion. Aujourd’hui, je vis pleinement de ma passion et de mon métier, et chaque projet est une nouvelle occasion d'évoluer.
-    </p>
-    <p>
-      En parallèle de mon parcours, j’ai fait le choix de devenir auto-entrepreneur, me permettant de travailler sur des projets divers et d'offrir des solutions personnalisées à mes clients. Toutefois, je reste ouvert à l’opportunité d’un CDI, pour m’intégrer au sein d’une équipe et continuer à apprendre et grandir professionnellement.
-    </p>
-    <p>
-      Ce parcours m'a appris que la curiosité, la persévérance et la passion sont les clés pour réussir dans ce monde en constante évolution. Je suis prêt pour les prochaines étapes de mon voyage dans l'univers des technologies.
-    </p>
-    <p>
-      <a href="#competences">Découvrir mes compétences</a>
-    </p>
-  </section>
+  <main>
+    <!-- Qui suis-je ? -->
+    <section id="about" class="section-spacing">
+      <div class="container">
+        <h2 class="section-title">Qui suis-je ?</h2>
+        <div class="about-content">
+          <p>
+            Depuis toujours, les nouvelles technologies m'ont fasciné. Ce monde
+            en constante évolution, où tout est possible, a éveillé en moi une
+            curiosité insatiable. Un jour, l'envie de réorienter ma carrière est
+            devenue plus forte que tout. J'ai alors décidé de me lancer dans une
+            reconversion professionnelle pour devenir développeur web et mobile.
+          </p>
+          <p>
+            Plongé dans cet univers, chaque ligne de code m'a permis de
+            découvrir une nouvelle facette de ma passion. Aujourd'hui, je vis
+            pleinement de ma passion et de mon métier, et chaque projet est une
+            nouvelle occasion d'évoluer.
+          </p>
+          <p>
+            En parallèle de mon parcours, j'ai fait le choix de devenir
+            auto-entrepreneur, me permettant de travailler sur des projets
+            divers et d'offrir des solutions personnalisées à mes clients.
+            Toutefois, je reste ouvert à l'opportunité d'un CDI, pour m'intégrer
+            au sein d'une équipe et continuer à apprendre et grandir
+            professionnellement.
+          </p>
+          <p>
+            Ce parcours m'a appris que la curiosité, la persévérance et la
+            passion sont les clés pour réussir dans ce monde en constante
+            évolution. Je suis prêt pour les prochaines étapes de mon voyage
+            dans l'univers des technologies.
+          </p>
+          <a href="#competences" class="section-link"
+            >Découvrir mes compétences</a
+          >
+        </div>
+      </div>
+    </section>
 
-  <!-- Mes compétences -->
-  <section id="competences">
-    <h2>Mes compétences</h2>
-    <ul class="skill-list">
-      <li>HTML</li>
-      <li>CSS</li>
-      <li>JavaScript</li>
-      <li>Vue.js</li>
-      <li>Node.js</li>
-      <li>PHP</li>
-      <li>WooCommerce</li>
-      <li>Prestashop</li>
-      <li>Symfony</li>
-      <li>SEO</li>
-      <li>UX/UI Design</li>
-      <li>Responsive Design</li>
-    </ul>
-    <p><a href="#projets">Voir mes projets récents</a></p>
-  </section>
+    <!-- Mes compétences -->
+    <section id="competences" class="section-spacing">
+      <div class="container">
+        <h2 class="section-title">Mes compétences</h2>
+        <ul class="skill-list" aria-label="Liste de mes compétences techniques">
+          <li><span class="skill-tag">HTML</span></li>
+          <li><span class="skill-tag">CSS</span></li>
+          <li><span class="skill-tag">JavaScript</span></li>
+          <li><span class="skill-tag">Vue.js</span></li>
+          <li><span class="skill-tag">Node.js</span></li>
+          <li><span class="skill-tag">PHP</span></li>
+          <li><span class="skill-tag">WooCommerce</span></li>
+          <li><span class="skill-tag">Prestashop</span></li>
+          <li><span class="skill-tag">Symfony</span></li>
+          <li><span class="skill-tag">SEO</span></li>
+          <li><span class="skill-tag">UX/UI Design</span></li>
+          <li><span class="skill-tag">Responsive Design</span></li>
+        </ul>
+        <a href="#projets" class="section-link">Voir mes projets récents</a>
+      </div>
+    </section>
 
-  <!-- Mes projets récents -->
-  <section id="projets">
-    <h2>Mes projets récents</h2>
-    <div class="carousel-container">
-      <div class="carousel-images">
-        <!-- Premier projet -->
-        <div class="carousel-item">
-          <a href="https://www.gamefriendz.com/" target="_blank" aria-label="Voir le projet GameFriendz">
-            <img src="/images/gamefriendz.png" alt="Plateforme sociale pour gamers, GameFriendz, profil utilisateur, affichage des joueurs" />
-            <p>GameFriendz - Plateforme sociale pour gamers, avec gestion de profils utilisateur et communauté.</p>
-          </a>
+    <!-- Mes projets récents -->
+    <section id="projets" class="section-spacing">
+      <div class="container">
+        <h2 class="section-title">Mes projets récents</h2>
+        <div
+          class="carousel-container"
+          aria-label="Carrousel des projets récents"
+        >
+          <div class="carousel-images">
+            <!-- Premier projet -->
+            <article class="carousel-item">
+              <a
+                href="https://www.gamefriendz.com/"
+                target="_blank"
+                rel="noopener"
+                aria-label="Voir le projet GameFriendz"
+              >
+                <figure>
+                  <img
+                    src="/images/gamefriendz.png"
+                    alt="Plateforme sociale pour gamers, GameFriendz, profil utilisateur, affichage des joueurs"
+                  />
+                  <figcaption>
+                    GameFriendz - Plateforme sociale pour gamers, avec gestion
+                    de profils utilisateur et communauté.
+                  </figcaption>
+                </figure>
+              </a>
+            </article>
+            <!-- Deuxième projet -->
+            <article class="carousel-item">
+              <a
+                href="https://www.gamefriendz.com/"
+                target="_blank"
+                rel="noopener"
+                aria-label="Voir le projet GameFriendz - page jeu"
+              >
+                <figure>
+                  <img
+                    src="/images/gamefriendz-jeu.png"
+                    alt="Page d'un jeu sur GameFriendz, description des caractéristiques du jeu et communauté"
+                  />
+                  <figcaption>
+                    GameFriendz - Détail d'un jeu avec ses caractéristiques et
+                    la communauté de joueurs.
+                  </figcaption>
+                </figure>
+              </a>
+            </article>
+            <!-- Troisième projet -->
+            <article class="carousel-item">
+              <a
+                href="https://www.gamefriendz.com/"
+                target="_blank"
+                rel="noopener"
+                aria-label="Voir le projet GameFriendz - version sombre"
+              >
+                <figure>
+                  <img
+                    src="/images/gamefriendz-dark.png"
+                    alt="Mode sombre sur GameFriendz, affichage des profils et jeux en version dark"
+                  />
+                  <figcaption>
+                    GameFriendz - Mode sombre de la plateforme, offrant une
+                    interface moderne et agréable.
+                  </figcaption>
+                </figure>
+              </a>
+            </article>
+          </div>
+          <button
+            class="carousel-button prev"
+            aria-label="Projet précédent"
+            onclick="moveSlide(-1)">&#9664;</button
+          >
+          <button
+            class="carousel-button next"
+            aria-label="Projet suivant"
+            onclick="moveSlide(1)">&#9654;</button
+          >
         </div>
-        <!-- Deuxième projet -->
-        <div class="carousel-item">
-          <a href="https://www.gamefriendz.com/" target="_blank" aria-label="Voir le projet GameFriendz">
-            <img src="/images/gamefriendz-jeu.png" alt="Page d'un jeu sur GameFriendz, description des caractéristiques du jeu et communauté" />
-            <p>GameFriendz - Détail d'un jeu avec ses caractéristiques et la communauté de joueurs.</p>
-          </a>
-        </div>
-        <!-- Troisième projet -->
-        <div class="carousel-item">
-          <a href="https://www.gamefriendz.com/" target="_blank" aria-label="Voir le projet GameFriendz">
-            <img src="/images/gamefriendz-dark.png" alt="Mode sombre sur GameFriendz, affichage des profils et jeux en version dark" />
-            <p>GameFriendz - Mode sombre de la plateforme, offrant une interface moderne et agréable.</p>
-          </a>
-        </div>
+        <a href="#contact" class="section-link"
+          >Contactez-moi pour un projet similaire</a
+        >
       </div>
-      <button class="carousel-button prev" onclick="moveSlide(-1)">&#9664;</button>
-      <button class="carousel-button next" onclick="moveSlide(1)">&#9654;</button>
-    </div>
-    <p><a href="#contact">Contactez-moi pour un projet similaire</a></p>
-  </section>
+    </section>
 
-  <!-- Contact -->
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Tu as un projet en tête ? N'hésite pas à me contacter pour en discuter !</p>
-    <div class="contact-container">
-      <div class="contact-item">
-        <strong>Email :</strong>
-        <a href="mailto:randy.venant@gmail.com">randy.venant@gmail.com</a>
+    <!-- FAQ -->
+    <section id="faq" class="section-spacing">
+      <div class="container">
+        <h2 class="section-title">Foire aux Questions</h2>
+        <div class="faq-container">
+          <details class="faq-item">
+            <summary class="faq-question"
+              >Quel est le prix d'un site internet ?</summary
+            >
+            <div class="faq-answer">
+              <p>
+                Le tarif dépend de nombreux facteurs, tels que le type de site
+                (vitrine, e-commerce) et les fonctionnalités spécifiques à
+                intégrer. Je vous invite à me contacter pour obtenir un devis
+                personnalisé gratuitement.
+              </p>
+            </div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-question"
+              >Comment se déroule la création de mon site ?</summary
+            >
+            <div class="faq-answer">
+              <p>
+                Le processus commence par une consultation pour comprendre vos
+                besoins et objectifs. Ensuite, je vous propose un plan détaillé
+                des étapes à suivre. Vous serez impliqué à chaque moment clé
+                pour garantir que le résultat correspond à vos attentes.
+              </p>
+            </div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-question"
+              >Quelles informations dois-je fournir avant de commencer ?</summary
+            >
+            <div class="faq-answer">
+              <p>
+                Il est important de me transmettre des éléments comme votre
+                logo, les textes pour chaque section et les images que vous
+                souhaitez intégrer. Si vous avez besoin d'assistance pour
+                préparer ces contenus, je peux vous aider à les concevoir.
+              </p>
+            </div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-question"
+              >En combien de temps mon site sera-t-il prêt ?</summary
+            >
+            <div class="faq-answer">
+              <p>
+                La durée de création dépend de la complexité du projet. Une fois
+                vos besoins bien définis, je vous donnerai une estimation
+                précise des délais. Mon objectif est de livrer un site de
+                qualité dans les temps convenus.
+              </p>
+            </div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-question"
+              >Puis-je demander des modifications après la livraison ?</summary
+            >
+            <div class="faq-answer">
+              <p>
+                Oui, des modifications peuvent être apportées après la
+                livraison. Je propose également des options de maintenance pour
+                assurer le bon fonctionnement et l'évolution de votre site sur
+                le long terme.
+              </p>
+            </div>
+          </details>
+        </div>
       </div>
-      <div class="contact-item">
-        <strong>LinkedIn :</strong>
-        <a href="https://www.linkedin.com/in/randy-VV/" target="_blank">randy-VV</a>
-      </div>
-      <div class="contact-item">
-        <strong>GitHub :</strong>
-        <a href="https://github.com/randyVV" target="_blank">randyVV</a>
-      </div>
-      <div class="contact-item">
-        <strong>MonCV :</strong>
-        <a href="https://randyvv.github.io/cv/" target="_blank">randy-developpeur-web-CV</a>
-      </div>
-    </div>
-  </div>
-  </section>
+    </section>
 
-    <section id="faq">
-      <h2>Foire aux Questions</h2>
-      <div class="faq-container">
-        <div class="faq-item">
-          <button class="faq-question">Quel est le prix d'un site internet ?</button>
-          <div class="faq-answer">
-            <p>Le tarif dépend de nombreux facteurs, tels que le type de site (vitrine, e-commerce) et les fonctionnalités spécifiques à intégrer. Je vous invite à me contacter pour obtenir un devis personnalisé gratuitement.</p>
+    <!-- Contact -->
+    <section id="contact" class="section-spacing">
+      <div class="container">
+        <h2 class="section-title">Contact</h2>
+        <p class="contact-intro">
+          Tu as un projet en tête ? N'hésite pas à me contacter pour en discuter
+          !
+        </p>
+        <address class="contact-container">
+          <div class="contact-item">
+            <strong>Email :</strong>
+            <a href="mailto:randy.venant@gmail.com">randy.venant@gmail.com</a>
           </div>
-        </div>
-        <div class="faq-item">
-          <button class="faq-question">Comment se déroule la création de mon site ?</button>
-          <div class="faq-answer">
-            <p>Le processus commence par une consultation pour comprendre vos besoins et objectifs. Ensuite, je vous propose un plan détaillé des étapes à suivre. Vous serez impliqué à chaque moment clé pour garantir que le résultat correspond à vos attentes.</p>
+          <div class="contact-item">
+            <strong>LinkedIn :</strong>
+            <a
+              href="https://www.linkedin.com/in/randy-VV/"
+              target="_blank"
+              rel="noopener">randy-VV</a
+            >
           </div>
-        </div>
-        <div class="faq-item">
-          <button class="faq-question">Quelles informations dois-je fournir avant de commencer ?</button>
-          <div class="faq-answer">
-            <p>Il est important de me transmettre des éléments comme votre logo, les textes pour chaque section et les images que vous souhaitez intégrer. Si vous avez besoin d’assistance pour préparer ces contenus, je peux vous aider à les concevoir.</p>
+          <div class="contact-item">
+            <strong>GitHub :</strong>
+            <a href="https://github.com/randyVV" target="_blank" rel="noopener"
+              >randyVV</a
+            >
           </div>
-        </div>
-        <div class="faq-item">
-          <button class="faq-question">En combien de temps mon site sera-t-il prêt ?</button>
-          <div class="faq-answer">
-            <p>La durée de création dépend de la complexité du projet. Une fois vos besoins bien définis, je vous donnerai une estimation précise des délais. Mon objectif est de livrer un site de qualité dans les temps convenus.</p>
+          <div class="contact-item">
+            <strong>Mon CV :</strong>
+            <a
+              href="https://randyvv.github.io/cv/"
+              target="_blank"
+              rel="noopener">randy-developpeur-web-CV</a
+            >
           </div>
-        </div>
-        <div class="faq-item">
-          <button class="faq-question">Puis-je demander des modifications après la livraison ?</button>
-          <div class="faq-answer">
-            <p>Oui, des modifications peuvent être apportées après la livraison. Je propose également des options de maintenance pour assurer le bon fonctionnement et l’évolution de votre site sur le long terme.</p>
-          </div>
-        </div>
+        </address>
       </div>
-  </section>
+    </section>
+  </main>
 
   <!-- Footer -->
-  <footer>
-    <p>© 2024 Randy Venant Valéry - Développeur Web Auto-entrepreneur</p>
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2024 Randy Venant Valéry - Développeur Web Auto-entrepreneur</p>
+    </div>
   </footer>
+
 </Layout>
